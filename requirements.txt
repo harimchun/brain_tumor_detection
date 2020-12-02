@@ -1,0 +1,8 @@
+Flask
+Jinja2
+numpy
+scikit-learn
+scipy
+virtualenv
+pillow
+opencv-python
