@@ -22,8 +22,10 @@
 	img{max-width:100%;}
 /*-- //Reset-Code --*/
 body {
-	background:#00BCD4;
+	background:#2e3141;
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("brain-1787622_1920.jpg");
 	background-size: cover;
+
 	font-family: 'Open Sans', sans-serif;
 	background-attachment: fixed;
     background-position: center;
@@ -42,7 +44,7 @@ h1{
 	width:35%;
 	margin:50px auto;
 	background:#fff;
-
+	border-radius:10px;
 }
 h2{
 	color:#fff;
@@ -50,6 +52,7 @@ h2{
 	padding:10px 0;
 	text-align:center;
 	font-size:20px;
+	border-radius:10px 10px 0 0;
 }
 .w3layouts{
 	padding:50px;
@@ -70,13 +73,15 @@ h2{
 }
 
 .btn {
-  border: 2px solid gray;
-  color: gray;
-  background-color: white;
+    border: none;
+	cursor:pointer;
+  color: #ffffff;
+  background-color: #f8585b;
   padding: 8px 20px;
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
+	margin-left:23%;
 }
 
 .upload-btn-wrapper input[type=file] {
@@ -92,8 +97,9 @@ h3{
 }
 
 .result_lable{
-	color: #ff6000;
+	color: #0E71B8;
     font-weight: bold;
+	text-align:center;
 }
 
 input[type="submit"]{

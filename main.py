@@ -49,7 +49,7 @@ def make_prediction():
     else:
       result = "Tumor가 발견되지 않았습니다"
 
-    label = "Score:"+str(score)+"\n"+result
+    label = "Score:"+str(score)
 
     plt.figure()
     plt.subplot(1, 2, 1)
@@ -67,7 +67,7 @@ def make_prediction():
 
     plt.savefig("static/"+img_name)
     time.sleep(0.001)
-    return render_template("index.html", label=label, img = img_name)
+    return render_template("index.html", label=label, img = img_name, res = result)
 
 if __name__=='__main__':
   app.run(host='0.0.0.0', port=8888, debug=True)

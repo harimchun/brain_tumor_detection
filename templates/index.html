@@ -21,21 +21,26 @@
                     <input type="file" value="Upload" name="image">
                 </div>
                 <input type="submit" value="예측 결과">
-                {% if label %}
-                    <span class="result_lable">
-                        {{ label }}
-                    </span>
-                {% endif %}
-                {% if img %}
-                <img src="{{url_for('static', filename=img) }}" style="margin-left: auto; margin-right: auto; display: block;"/>
-                {% endif %}
+            <div>
+            {% if label %}
+                <span class="result_lable">
+                    <p style="text-align: center">{{ label }}</p>
+                    <p style="text-align: center">{{ res }}</p>
+                </span>
+            {% endif %}
+            </div>
+            {% if img %}
+            <img src="{{url_for('static', filename=img) }}" style="margin-left: auto; margin-right: auto; display: block;"/>
+            {% endif %}
             </form>
         </div>
     </div>
 </div>
 <div>
-    <p style="text-align: center;">Using the 40 each yes and no images,<br>Cutoff was determinede as 0.4</p>
+    <p style="text-align: center; color: white;">Using the 40 each yes and no images,<br>Cutoff was determineded as 0.4<br></p>
     <p><br</p>
+</div>
+<div>
     <img src="{{url_for('static', filename='box_plot.png') }}" style="margin-left: auto; margin-right: auto; display: block;"/>
 </div>
 </body>
